@@ -1,10 +1,15 @@
-import React from 'react';
-import styles from './header.less';
+import React from "react";
+import styles from "./header.less";
+import { SearchBlock } from "./SearchBlock";
+import { SortBlock } from "./SortBlock";
+import { ThreadTitle } from "./ThreadTitle";
 
 export function Header() {
   return (
-      <header>
-        <h1 className={styles.example}>Header12</h1>
-      </header>
+    <header className={styles.header}>
+      <SearchBlock />
+      <ThreadTitle />
+      <SortBlock />
+    </header>
   );
 }

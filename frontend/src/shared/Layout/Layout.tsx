@@ -1,14 +1,10 @@
-import React from 'react';
-import styles from './layout.less';
+import React from "react";
+import layout from "./layout.less";
 
 interface ILayoutProps {
-  children: React.ReactNode
+  children?: React.ReactNode;
 }
 
 export function Layout({ children }: ILayoutProps) {
-  return (
-  <div>
-    {children}
-  </div>
-  );
+  return <div className={layout.layout}>{children}</div>;
 }
